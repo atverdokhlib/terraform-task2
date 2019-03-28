@@ -13,7 +13,7 @@ variable "env"{
 }
 variable "region" {
   description = "Location of resources"
-  default = "West Europe"
+  default = "North Europe"
 
 }
 
@@ -43,4 +43,11 @@ variable "username" {
   description = "Username for ssh description"
 }
 
-
+variable "vnet" {
+  description = "Virtual network"
+  default = "10.0.0.0/16"
+}
+variable "vsubnet" {
+  description = "Lan subnet"
+  default = "10.0.1.0/24"
+}

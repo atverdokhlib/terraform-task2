@@ -13,5 +13,7 @@ module "web-pool" {
   dnsforpubip = "${var.dnsforpubip}"
   username = "${var.username}"
   password = "${data.azurerm_key_vault_secret.vm-password.value}"
+  vnet = "${var.vnet}"
+  vsubnet = "${var.vsubnet}"
   #depends_on = ["azurerm_virtual_machine_extension.test"]
 }
