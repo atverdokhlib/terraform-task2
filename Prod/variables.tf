@@ -13,7 +13,7 @@ variable "env"{
 }
 variable "region" {
   description = "Location of resources"
-  default = "West Europe"
+  default = "North Europe"
 
 }
 
@@ -29,7 +29,7 @@ variable "vms_count" {
 
 variable "dnsforpubip" {
   description = "Which cloud region should be used"
-  default = "atv-dev-terra"
+  default = "atv-prod-terra"
 }
 
 variable subscription_id {
@@ -43,4 +43,12 @@ variable "username" {
   description = "Username for ssh description"
 }
 
+variable "vnet" {
+  description = "Virtula network"
+  default = "10.1.0.0/16"
+}
+variable "vsubnet" {
+  description = "Lan subnet"
+  default = "10.1.1.0/24"
+}
 
