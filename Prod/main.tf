@@ -3,7 +3,7 @@ name = "vm-password"
 vault_uri = "https://dev-pro.vault.azure.net/"
 }
 module "web-pool" {
-  source = "../modules/web-vm-v0.0.1"
+  source = "github.com/atverdokhlib/web-vm-v0.0.1.git"
 
   env = "${var.env}"
   region = "${var.region}"
